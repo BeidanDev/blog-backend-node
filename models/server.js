@@ -9,6 +9,7 @@ class Server {
         this.port = process.env.PORT;
 
         this.categoryPath = '/api/category';
+        this.postPath = '/api/posts';
 
         // Database connection
         this.dbConnection();
@@ -39,6 +40,7 @@ class Server {
 
     routes() {
         this.app.use(this.categoryPath, require('../routes/category'));
+        this.app.use(this.postPath, require('../routes/post'));
     }
 
     listen() {
