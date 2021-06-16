@@ -55,6 +55,19 @@ const createPost = async(req = request, res = response) => {
     const { body } = req;
 
     try {
+        // Cut image
+        const cutImage = body.image.split('.');
+        const extension = cutImage[cutImage.length - 1];
+
+        // Validate extension
+        const validExtensions = ['png', 'jpg'];
+
+        if(!validExtensions.includes(extension)) {
+            return res.status(400).json({
+                msg: `La extension ${ extension } no es permitida, son validas las siguientes entensiones: ${ validExtensions }`
+            });
+        }
+
         const postSave = await Post.create(body);
 
         res.json({
