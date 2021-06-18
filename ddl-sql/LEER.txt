@@ -1,0 +1,7 @@
+Para preparar la base de datos tiene que realizar los siguientes pasos:
+
+1- Requisito --> Tener un motor de base de datos --> MySQL
+
+2- Ejecutar el sql llamado "sql-ddl-blog.sql" para crear la base de datos y las entidades.
+
+3- Listo :)
