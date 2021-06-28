@@ -4,7 +4,7 @@ Backend: Node.js - Express.js
 
 Base de datos: MySQL
 
-Documentación API: https://documenter.getpostman.com/view/11487551/TzeXkSb2
+Documentación API: https://documenter.getpostman.com/view/11487551/TzefBPSf
 
 ## Instalación
 
